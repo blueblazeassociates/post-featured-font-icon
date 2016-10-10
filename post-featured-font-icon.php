@@ -234,7 +234,7 @@ add_action('loop_start','condition_filter_title');
 function the_post_font_icon( $id = null ) {
     global $post;
 
-    $id = ( null === $id ) ? $post->ID : $post_id;
+    $id = ( null === $id ) ? $post->ID : $id;
 
     $custom = get_post_custom($id);
 
