@@ -1,31 +1,20 @@
 <?php
-/**
- * Post Featured Font Icon
- *
- * @author  Blue Blaze Associates
- * @license GPL-2.0+
- * @link    https://github.com/blueblazeassociates/post-featured-font-icon
- */
-
 /*
- * Plugin Name:       Post Featured Font Icon
- * Plugin URI:        https://github.com/blueblazeassociates/post-featured-font-icon
- * Description:       Set Post Featured Icon for featured image, add font icon to post title
- * Version:           1.0.1
- * Author:            Kishore
- * Author URI:        http://iamkisho.re
- * Requires at least: WP 3.8
- * Tested up to:      WP 5.1
- * Text Domain:       post-featured-font-icon
- * Domain Path:       /languages/
- * Copyright:         2015 Kishore Sahoo
- * License:           GNU General Public License v3.0
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
- * GitHub Plugin URI: https://github.com/blueblazeassociates/post-featured-font-icon
- * GitHub Branch:     github
- * Requires WP:       4.5
- * Requires PHP:      5.6
- */
+Plugin Name: Post Featured Font Icon
+Plugin URI: https://shop.opentuteplus.com/
+Description: Set Post Featured Icon for featured image, add font icon to post title.
+Author: Kishore
+Author URI: http://iamkisho.re
+Version: 1.0.1
+Requires at least: WP 3.8
+Tested up to: WP 5.1
+Text Domain: post-featured-font-icon
+Domain Path: /languages/
+
+Copyright: 2015 Kishore Sahoo
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
 
 
 /**
@@ -240,7 +229,7 @@ add_action('loop_start','condition_filter_title');
 function the_post_font_icon( $id = null ) {
     global $post;
 
-    $id = ( null === $id ) ? $post->ID : $id;
+    $id = ( null === $id ) ? $post->ID : $post_id;
 
     $custom = get_post_custom($id);
 
@@ -258,34 +247,6 @@ function the_post_font_icon( $id = null ) {
     }
 
     echo $the_post_font_icon;
-}
-
-/**
- * @param integer $id
- *
- * @return string
- */
-function get_the_post_font_icon( $id = null ) {
-  global $post;
-
-  $id = ( null === $id ) ? $post->ID : $id;
-
-  $custom = get_post_custom($id);
-
-  if (!empty($custom["post-featured-icon"][0])) {
-    $post_featured_icon = $custom["post-featured-icon"][0];
-  } else {
-    $post_featured_icon = null;
-  }
-
-  if( !empty( $post_featured_icon ) ) {
-    $v=explode('|',$post_featured_icon);
-    $the_post_font_icon = '<i class="'. $v[0].' '.$v[1].'"></i>';
-  } else {
-    $the_post_font_icon = null;
-  }
-
-  return $the_post_font_icon;
 }
 
 /**
