@@ -11,7 +11,7 @@
  * Plugin Name:       Post Featured Font Icon
  * Plugin URI:        http://wordpress.org/extend/plugins/post-featured-font-icon/
  * Description:       Set Post Featured Icon for featured image, add font icon to post title
- * Version:           1.0.1-p01
+ * Version:           1.0.1
  * Author:            Kishore
  * Author URI:        http://iamkisho.re
  * Requires at least: WP 3.8
