@@ -9,7 +9,7 @@
 
 /*
  * Plugin Name:       Post Featured Font Icon
- * Plugin URI:        http://wordpress.org/extend/plugins/post-featured-font-icon/
+ * Plugin URI:        https://github.com/blueblazeassociates/post-featured-font-icon
  * Description:       Set Post Featured Icon for featured image, add font icon to post title
  * Version:           1.0.0
  * Author:            Kishore
