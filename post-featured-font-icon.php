@@ -22,6 +22,7 @@
  * License:           GNU General Public License v3.0
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
  * GitHub Plugin URI: https://github.com/blueblazeassociates/post-featured-font-icon
+ * GitHub Branch:     github
  * Requires WP:       4.5
  * Requires PHP:      5.6
  */
