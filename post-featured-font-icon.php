@@ -11,12 +11,13 @@
  * Plugin Name:       Post Featured Font Icon
  * Plugin URI:        https://github.com/blueblazeassociates/post-featured-font-icon
  * Description:       Set Post Featured Icon for featured image, add font icon to post title
- * Version:           1.0.0.1
+ * Version:           1.0.0
  * Author:            Kishore
  * Author URI:        http://blog.kishorechandra.co.in/
  * License:           GPL v2 or later
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
  * GitHub Plugin URI: https://github.com/blueblazeassociates/post-featured-font-icon
+ * GitHub Branch:     github
  * Requires WP:       4.5
  * Requires PHP:      5.6
  */
