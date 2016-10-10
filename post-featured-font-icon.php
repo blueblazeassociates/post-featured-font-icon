@@ -1,12 +1,25 @@
 <?php
+/**
+ * Post Featured Font Icon
+ *
+ * @author  Blue Blaze Associates
+ * @license GPL-2.0+
+ * @link    https://github.com/blueblazeassociates/post-featured-font-icon
+ */
+
 /*
-Plugin Name: Post Featured Font Icon
-Plugin URI: http://wordpress.org/extend/plugins/post-featured-font-icon/
-Version: 1.0
-Description: Set Post Featured Icon for featured image, add font icon to post title
-Author: Kishore
-Author URI: http://blog.kishorechandra.co.in/
-*/
+ * Plugin Name:       Post Featured Font Icon
+ * Plugin URI:        http://wordpress.org/extend/plugins/post-featured-font-icon/
+ * Description:       Set Post Featured Icon for featured image, add font icon to post title
+ * Version:           1.0.0
+ * Author:            Kishore
+ * Author URI:        http://blog.kishorechandra.co.in/
+ * License:           GPL v2 or later
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
+ * GitHub Plugin URI: https://github.com/blueblazeassociates/post-featured-font-icon
+ * Requires WP:       4.5
+ * Requires PHP:      5.6
+ */
 
 
 /**
