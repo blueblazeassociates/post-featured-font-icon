@@ -239,7 +239,7 @@ add_action('loop_start','condition_filter_title');
 function the_post_font_icon( $id = null ) {
     global $post;
 
-    $id = ( null === $id ) ? $post->ID : $post_id;
+    $id = ( null === $id ) ? $post->ID : $id;
 
     $custom = get_post_custom($id);
 
@@ -257,6 +257,34 @@ function the_post_font_icon( $id = null ) {
     }
 
     echo $the_post_font_icon;
+}
+
+/**
+ * @param integer $id
+ *
+ * @return string
+ */
+function get_the_post_font_icon( $id = null ) {
+  global $post;
+
+  $id = ( null === $id ) ? $post->ID : $id;
+
+  $custom = get_post_custom($id);
+
+  if (!empty($custom["post-featured-icon"][0])) {
+    $post_featured_icon = $custom["post-featured-icon"][0];
+  } else {
+    $post_featured_icon = null;
+  }
+
+  if( !empty( $post_featured_icon ) ) {
+    $v=explode('|',$post_featured_icon);
+    $the_post_font_icon = '<i class="'. $v[0].' '.$v[1].'"></i>';
+  } else {
+    $the_post_font_icon = null;
+  }
+
+  return $the_post_font_icon;
 }
 
 /**
