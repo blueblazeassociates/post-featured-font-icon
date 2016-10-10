@@ -3,8 +3,8 @@ Contributors: kishores
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L5DAL9AXTAG8L
 Tags: font-icon, title, featured-image, dashicons, genericons, font-awesome
 Requires at least: 3.8
-Tested up to: 3.9
-Stable tag: 1.0
+Tested up to: 5.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/quick-guide-gplv3.html
 
@@ -59,8 +59,12 @@ Please deactivate your theme font-awesome css/js
 
 == Changelog ==
 
+= 1.0.1 =
+* Few small Bug Fix
+
 = 1.0 =
 * Added the new plugin
+
 == Upgrade Notice ==
 
 = 1.0 =

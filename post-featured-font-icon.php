@@ -11,10 +11,15 @@
  * Plugin Name:       Post Featured Font Icon
  * Plugin URI:        http://wordpress.org/extend/plugins/post-featured-font-icon/
  * Description:       Set Post Featured Icon for featured image, add font icon to post title
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Kishore
- * Author URI:        http://blog.kishorechandra.co.in/
- * License:           GPL v2 or later
+ * Author URI:        http://iamkisho.re
+ * Requires at least: WP 3.8
+ * Tested up to: WP 5.1
+ * Text Domain: post-featured-font-icon
+ * Domain Path: /languages/
+ * Copyright: 2015 Kishore Sahoo
+ * License:           GNU General Public License v3.0
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
  * GitHub Plugin URI: https://github.com/blueblazeassociates/post-featured-font-icon
  * Requires WP:       4.5
@@ -35,7 +40,7 @@ function set_post_featured_icon_meta_boxes( $post_type, $post ) {
     if(in_array($post_type, $types)){
         add_meta_box(
             'post-featured-icon',
-            __( 'Set Featured Icon', '_tk' ),
+            __( 'Set Featured Icon', 'post-featured-font-icon' ),
             'post_icon_sidebar',
             $post_type,
             'side',
@@ -262,7 +267,7 @@ function the_post_font_icon( $id = null ) {
 
 function icon_picker_scripts() {
     $css = plugin_dir_url( __FILE__ ) . 'css/icon-picker.css';
-    wp_enqueue_style( 'dashicons-picker', $css, array( 'dashicons' ), '1.0' );
+    wp_enqueue_style( 'dashicons-picker', $css, array( 'dashicons' ), '1.0.1' );
 
     $font1 = plugin_dir_url( __FILE__ ) . 'fonts/genericons/genericons.css';
     wp_enqueue_style( 'genericons', $font1, '', '');
@@ -271,7 +276,7 @@ function icon_picker_scripts() {
     wp_enqueue_style( 'font-awesome', $font2,'','');
 
     $js = plugin_dir_url( __FILE__ ) . '/js/icon-picker.js';
-    wp_enqueue_script( 'dashicons-picker', $js, array( 'jquery' ), '1.0' );
+    wp_enqueue_script( 'dashicons-picker', $js, array( 'jquery' ), '1.0.1' );
 }
 // Make sure we only enqueue on our admin page //
 add_action( 'admin_enqueue_scripts', 'icon_picker_scripts' );
