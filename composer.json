@@ -1,0 +1,35 @@
+{
+  "name"        : "blueblazeassociates/post-featured-font-icon",
+  "description" : "Post Featured Font Icon.  Set Post Featured Icon for featured image, add font icon to post title.",
+  "type"        : "wordpress-plugin",
+  "homepage"    : "https://github.com/blueblazeassociates/post-featured-font-icon",
+  "license"     : "GPL-2.0+",
+  "authors" : [{
+      "name"     : "Blue Blaze Associates",
+      "homepage" : "http://www.blueblazeassociates.com",
+      "role"     : "Owner",
+      "email"    : "admin@blueblazeassociates.com"
+    }, {
+      "name"     : "Ed Gifford",
+      "homepage" : "http://www.blueblazeassociates.com",
+      "role"     : "Developer",
+      "email"    : "egifford@blueblazeassociates.com"
+    }
+  ],
+  "keywords" : [
+    "dashicons",
+    "featured image",
+    "font icon",
+    "font-awesome",
+    "genericons",
+    "title"
+  ],
+  "replace" : {
+  },
+  "require" : {
+    "php" : ">=5.6.24" 
+  },
+  "config" : {
+    "php" : "5.6.*"
+  }
+}
